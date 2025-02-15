@@ -1,0 +1,13 @@
+[package]
+name = "hello_android"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+candle-core = { git = "https://github.com/huggingface/candle.git", version = "0.8.3" }
+jni = "0.20.0"
+
+[lib]
+name = "hello_android"
+path = "src/lib.rs"
+crate-type = ["dylib"]
